@@ -11,6 +11,10 @@ fun main(args: Array<String>) {
     println(nullJavaExample.name)
     println(nullJavaExample.age)
 
+    val nullJavaExampleNull = NullJavaExample.getInstance()
+    println(nullJavaExampleNull?.age)
+    println(nullJavaExampleNull?.name?.length)
+
     val strError: String? = null
     println(strError!!.length)
 }
