@@ -20,4 +20,9 @@ class VowelConsonantTest {
         Assert.assertEquals(10, countVowels(str))
         Assert.assertEquals(17, countConsonants(str))
     }
+
+    @Test
+    fun countVowelsFilter() {
+        Assert.assertEquals(7, countVowelsFilter("Felipe is programming"))
+    }
 }
